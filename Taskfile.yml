@@ -1,0 +1,27 @@
+version: '3'
+
+tasks:
+  install-cdk:
+    cmds:
+      - sudo yarn global add aws-cdk
+  
+  install-artillery:
+    cmds:
+      - sudo yarn global add artillery@latest
+  
+  install-sam:
+    cmds:
+      - wget https://github.com/aws/aws-sam-cli/releases/latest/download/aws-sam-cli-linux-x86_64.zip
+      - unzip aws-sam-cli-linux-x86_64.zip -d sam-installation
+      - sudo ./sam-installation/install
+    status:
+      - test -d sam-installation
+
+  setup-workshop:
+    cmds:
+      - git clone --depth 1 --branch v4.3.0 https://github.com/aws-samples/aws-lambda-java-workshop.git
+      - cd aws-lambda-java-workshop/lab/unicorn-store
+      - ./setup-infrastructure.sh
+    status:
+      - test -d aws-lambda-java-workshop
+
