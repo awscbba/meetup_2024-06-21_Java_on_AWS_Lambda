@@ -28,10 +28,15 @@ tasks:
       - test -d sam-installation
 
   setup-workshop:
+    dir: aws-lambda-java-workshop/labs/unicorn-store
+    cmds:
+      - task: clone-workshop
+      - sh setup-infrastructure.sh
+  
+  clone-workshop:
+    internal: true
     cmds:
       - git clone --depth 1 --branch v4.3.0 https://github.com/aws-samples/aws-lambda-java-workshop.git
-      - cd aws-lambda-java-workshop/lab/unicorn-store
-      - ./setup-infrastructure.sh
     status:
       - test -d aws-lambda-java-workshop
 

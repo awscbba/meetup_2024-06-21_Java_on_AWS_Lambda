@@ -3,3 +3,6 @@
 .github/
 node_modules/
 yarn*
+*.zip
+sam-installation/
+aws-lambda-java-workshop/

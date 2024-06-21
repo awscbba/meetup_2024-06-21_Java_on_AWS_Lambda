@@ -113,6 +113,62 @@
         }
       }
     },
+    "corretto11@latest": {
+      "last_modified": "2024-05-28T16:41:07Z",
+      "resolved": "github:NixOS/nixpkgs/4a3fc4cf736b7d2d288d7a8bf775ac8d4c0920b4#corretto11",
+      "source": "devbox-search",
+      "version": "11.0.23.9.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/km0rk2jkmapp0c5h1z60wgsxcbkmcf7a-corretto-11.0.23.9.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/km0rk2jkmapp0c5h1z60wgsxcbkmcf7a-corretto-11.0.23.9.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/cblycap1y9cgbm3v9hl751f6f3mlh9ya-corretto-11.0.23.9.1",
+              "default": true
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/imw80v8jlfij27x05ic9m0v84wmvxryr-corretto-11.0.23.9.1-debug"
+            }
+          ],
+          "store_path": "/nix/store/cblycap1y9cgbm3v9hl751f6f3mlh9ya-corretto-11.0.23.9.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0zx2w91nzz7w6s434p234ibx11fhk6hb-corretto-11.0.23.9.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/0zx2w91nzz7w6s434p234ibx11fhk6hb-corretto-11.0.23.9.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ssw9r4xrvb2h9x1nk22yb3fwijpkhjd5-corretto-11.0.23.9.1",
+              "default": true
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/ag06l33aa3pwbiv9wwxn8j0r44qlkn8d-corretto-11.0.23.9.1-debug"
+            }
+          ],
+          "store_path": "/nix/store/ssw9r4xrvb2h9x1nk22yb3fwijpkhjd5-corretto-11.0.23.9.1"
+        }
+      }
+    },
     "direnv@latest": {
       "last_modified": "2024-06-08T17:34:36Z",
       "resolved": "github:NixOS/nixpkgs/cd18e2ae9ab8e2a0a8d715b60c91b54c0ac35ff9#direnv",

@@ -11,12 +11,11 @@
     "zsh-powerlevel10k@latest",
     "nodejs_20@latest",
     "corepack_20@latest",
-    "wget@latest"
+    "wget@latest",
+    "corretto11@latest"
   ],
   "shell": {
     "init_hook": [
-      // "typeset -g POWERLEVEL9K_INSTANT_PROMPT=off",
-      // "source .devbox/nix/profile/default/share/zsh-prezto/init.zsh",
       "echo 'Welcome to devbox!'"
     ],
     "scripts": {
