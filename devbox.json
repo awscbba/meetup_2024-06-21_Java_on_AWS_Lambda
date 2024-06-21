@@ -24,7 +24,7 @@
       "install-cdk":       ["task install-cdk"],
       "install-artillery": ["task install-artillery"],
       "install-sam":       ["task install-sam"],
-      "setup-workshop":    ["task setup-workshop"],
-    },
-  },
+      "setup-workshop":    ["task setup-workshop"]
+    }
+  }
 }
